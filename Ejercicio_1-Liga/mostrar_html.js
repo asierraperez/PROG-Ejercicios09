@@ -1,4 +1,9 @@
+/**
+ * Muestro la clasificación en el HTML
+ * @param {array<object>} clasificacion 
+ */
 function mostrar_html(clasificacion) {
+    //recorro las posiciones, cada i es una fila del HTML
     for (let i = 0; i < clasificacion.length; i++) {
         document.getElementById("puesto" + (i + 1)).innerHTML = i + 1
         document.getElementById("nombre" + (i + 1)).innerHTML = clasificacion[i].nombre
